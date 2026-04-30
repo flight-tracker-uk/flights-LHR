@@ -187,12 +187,12 @@ jobs:
           if [ -f ~/.flightcache/last_stats.json ]; then
             python -c "
           from report_stats import report_scrape
-          report_scrape('LHR', '${{ matrix.destination }}', open('$HOME/.flightcache/last_stats.json').read())
+          report_scrape('LHR-europe-2', '${{ matrix.destination }}', open('$HOME/.flightcache/last_stats.json').read())
           " || true
           else
             python -c "
           from report_stats import report_error
-          report_error('LHR', '${{ matrix.destination }}', 'scrape', 'No stats file generated')
+          report_error('LHR-europe-2', '${{ matrix.destination }}', 'scrape', 'No stats file generated')
           " || true
           fi
 
@@ -234,7 +234,7 @@ jobs:
           from report_stats import report_export
           with open('$HOME/.flightcache/export_stats.json') as f:
               s = json.load(f)
-          report_export('LHR', '${{ matrix.destination }}', s.get('exported_searches',0), s.get('exported_flights',0), s.get('skipped_unchanged',0), s.get('size_kb',0), ${EXPORT_DURATION})
+          report_export('LHR-europe-2', '${{ matrix.destination }}', s.get('exported_searches',0), s.get('exported_flights',0), s.get('skipped_unchanged',0), s.get('size_kb',0), ${EXPORT_DURATION})
           " || true
 
             IMPORT_START=$(date +%s)
@@ -272,7 +272,7 @@ jobs:
             fi
             python -c "
           from report_stats import report_import
-          report_import('LHR', '${{ matrix.destination }}', ${ATTEMPT}, ${IMPORT_PY}, ${IMPORT_DURATION}, '${IMPORT_ERROR}')
+          report_import('LHR-europe-2', '${{ matrix.destination }}', ${ATTEMPT}, ${IMPORT_PY}, ${IMPORT_DURATION}, '${IMPORT_ERROR}')
           " || true
           fi
 
@@ -286,7 +286,7 @@ jobs:
           from report_stats import post_stats
           import os
           post_stats({
-              'airport': 'LHR',
+              'airport': 'LHR-europe-2',
               'destination': '${{ matrix.destination }}',
               'run_date': '$(date -u +%Y-%m-%d)',
               'run_id': os.environ.get('GITHUB_RUN_ID', ''),
