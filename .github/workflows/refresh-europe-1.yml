@@ -1,8 +1,6 @@
 name: Nightly Flight Refresh (europe-1)
 
 on:
-  schedule:
-    - cron: '20 3 * * *'
   workflow_dispatch:
     inputs:
       destinations:
