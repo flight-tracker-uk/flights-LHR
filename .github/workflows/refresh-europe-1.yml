@@ -25,83 +25,78 @@ jobs:
       max-parallel: 10
       matrix:
         destination:
-          - ABV
+
           - ABZ
-          - ACC
-          - ADD
+
           - AGP
-          - ALA
+
           - ALG
-          - AMM
+
           - AMS
-          - ANU
+
           - ARN
+
           - ATH
-          - ATL
-          - AUH
-          - AUS
-          - BAH
+
           - BCN
-          - BDA
+
           - BDS
+
           - BEG
+
           - BER
-          - BEY
-          - BGI
+
           - BHD
+
           - BIO
-          - BKK
+
           - BLL
+
           - BLQ
-          - BLR
-          - BNA
-          - BOG
-          - BOM
-          - BOS
+
           - BRU
+
           - BSL
+
           - BUD
-          - BWI
-          - BWN
-          - CAI
-          - CAN
+
           - CDG
+
           - CFU
+
           - CHQ
-          - CKG
-          - CLT
-          - CMB
+
           - CMN
+
           - CPH
-          - CPT
-          - CSX
-          - CUN
-          - CVG
-          - DAC
+
           - DBV
-          - DEL
-          - DEN
-          - DFW
+
           - DLM
-          - DMM
+
           - DND
-          - DOH
-          - DTW
+
           - DUB
+
           - DUS
-          - DWC
-          - DXB
+
           - EDI
+
           - EFL
-          - EWR
-          - EZE
+
           - FAO
+
           - FCO
+
           - FLR
+
           - FRA
+
           - FSC
+
           - GCI
-          - GCM
+
+          - OPO
 
     steps:
       - name: Checkout code

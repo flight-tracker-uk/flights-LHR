@@ -25,83 +25,78 @@ jobs:
       max-parallel: 10
       matrix:
         destination:
+
           - OLB
-          - ORD
+
           - ORK
+
           - ORY
+
           - OSL
+
           - OTP
+
           - PDL
-          - PDX
+
           - PEG
-          - PEK
-          - PER
+
           - PFO
-          - PHL
-          - PHX
-          - PIT
-          - PKX
-          - PLS
+
           - PMI
+
           - PMO
+
           - PRG
+
           - PSA
-          - PVG
+
           - PVK
+
           - RAK
-          - RDU
+
           - RHO
+
           - RMI
-          - RUH
-          - SAN
-          - SCL
+
           - SCQ
-          - SEA
-          - SFO
-          - SGN
-          - SIN
-          - SJO
+
           - SKG
-          - SLC
+
           - SNN
+
           - SOF
+
           - SPU
-          - STL
+
           - STR
-          - SVD
+
           - SVQ
-          - SYD
+
           - SZG
-          - SZX
-          - TAO
-          - TAS
-          - TBS
-          - TFU
+
           - TIA
+
           - TIV
+
           - TLS
-          - TLV
+
           - TOS
-          - TPA
-          - TPE
-          - TSN
+
           - TUN
+
           - VCE
+
           - VIE
+
           - VLC
+
           - WAW
-          - WUH
-          - XIY
-          - YHZ
-          - YOW
-          - YUL
-          - YVR
-          - YYC
-          - YYZ
+
           - ZAG
+
           - ZRH
+
           - ZTH
-          - ZYL
 
     steps:
       - name: Checkout code

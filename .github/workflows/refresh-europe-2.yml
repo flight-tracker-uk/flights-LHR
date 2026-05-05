@@ -25,82 +25,83 @@ jobs:
       max-parallel: 10
       matrix:
         destination:
+
           - GIB
-          - GIG
+
           - GLA
-          - GND
+
           - GOT
-          - GRU
+
           - GVA
-          - GYD
+
           - HAJ
-          - HAK
+
           - HAM
-          - HAN
+
           - HEL
+
           - HER
-          - HKG
-          - HKT
-          - HND
-          - HYD
-          - IAD
-          - IAH
+
           - IBZ
-          - ICN
+
           - INN
+
           - INV
+
           - IOM
-          - ISB
+
           - IST
-          - JED
+
           - JER
-          - JFK
+
           - JMK
-          - JNB
+
           - JTR
+
           - KEF
-          - KGL
+
           - KOI
+
           - KRK
-          - KUL
-          - KWI
-          - LAS
-          - LAX
+
           - LCA
+
           - LCG
+
           - LDY
-          - LHE
-          - LIM
+
           - LIN
+
           - LIS
+
           - LJU
-          - LOS
+
           - LSI
+
           - LUX
-          - LXR
+
           - LYS
-          - MAA
+
           - MAD
+
           - MAN
-          - MBJ
-          - MCO
-          - MCT
-          - MEL
-          - MEX
-          - MIA
+
           - MLA
-          - MLE
+
           - MRS
-          - MSP
-          - MSY
+
           - MUC
+
           - MXP
+
           - NAP
-          - NAS
-          - NBO
+
           - NCE
+
           - NCL
+
           - NOC
+
           - NUE
 
     steps:
